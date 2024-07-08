@@ -1,0 +1,21 @@
+// import { Navbar } from '@material-tailwind/react'
+import React from 'react'
+import Navbar from './../navbar/Navbar'
+import Footer from './../footer/Footer'
+
+const Layout = ({children}) => {
+  return (
+    <div>
+    {/* Navbar  */}
+    <Navbar />
+    {/* main Content  */}
+    <div className="content min-h-screen">
+        {children}
+    </div>
+    {/* Footer  */}
+    <Footer/>
+</div>
+  )
+}
+
+export default Layout

@@ -1,0 +1,44 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a202c; /* Example background color */
+  }
+  
+  .loader-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fbbf24; /* Example text color */
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+  }
+  
+  .loader-text-main {
+    animation: slide-in 1s ease-out;
+  }
+  
+  .loader-text-secondary {
+    animation: slide-in 1s ease-out 0.5s;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
